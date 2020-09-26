@@ -1,7 +1,8 @@
 input.onButtonPressed(Button.A, function () {
     if (ronde == 0) {
         ronde = 1
-        basic.showString("" + (jongenmeisje[0]))
+        index = 0
+        basic.showString("" + (jongenmeisje[index]))
     } else if (ronde == 1) {
         if (index == 0) {
             index = 1
@@ -39,6 +40,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.AB, function () {
     if (ronde == 0) {
         ronde = 1
+        index = 0
         basic.showString("" + (jongenmeisje[0]))
     } else if (ronde == 1) {
         ronde = 2
@@ -66,7 +68,8 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     if (ronde == 0) {
         ronde = 1
-        basic.showString("" + (jongenmeisje[1]))
+        index = 1
+        basic.showString("" + (jongenmeisje[index]))
     } else if (ronde == 1) {
         if (index == 0) {
             index = 1
